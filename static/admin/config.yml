@@ -6,6 +6,18 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+  - name: "doing"
+    label: "Doing"
+    folder: "src/pages/doing"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "doing"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Tags", name: "tags", widget: "list"}
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"
@@ -18,10 +30,24 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
-
   - name: "pages"
     label: "Pages"
     files:
+      - file: "src/pages/version/index.md"
+        label: "Version"
+        name: "version"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "version-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/webdev/index.md"
+        label: "WebDev"
+        name: "webdev"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "web-dev-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Description, name: description, widget: string}
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"
