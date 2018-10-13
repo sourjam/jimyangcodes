@@ -1,6 +1,6 @@
 ---
 templateKey: 'about-page'
-title: Hi there
+title: about page
 ---
 
 I'm Jim Yang, a New York City-based [Web Developer](/web-dev), writer, mentor, and solopreneur.

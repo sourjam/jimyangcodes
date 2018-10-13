@@ -50,7 +50,6 @@ WebDevPage.propTypes = {
 
 export default WebDevPage
 
-
 export const webDevPageQuery = graphql`
   query WebDevPage($id: String!) {
     markdownRemark(id: { eq: $id }) {

@@ -15,18 +15,18 @@ const Navbar = () => (
         <Link className="navbar-item" to="/web-dev">
           Developer
         </Link>
-        <Link className="navbar-item" to="/products">
+        <Link className="navbar-item" to="/doing-now">
           Doing Now
         </Link>
         <br/>
-        <Link className="navbar-item" to="/products">
+        <Link className="navbar-item" to="/worked-at">
           Worked At
         </Link>
-        <Link className="navbar-item" to="/products">
+        <Link className="navbar-item" to="/hindsights">
           Hindsights
         </Link>
         <br/>
-        <Link className="navbar-item" to="/products">
+        <Link className="navbar-item" to="/version-history">
           Version 0.1
         </Link>
       </div>
