@@ -25,12 +25,6 @@ FrontEndPageTemplate.propTypes = {
 }
 
 const FrontEndPage = ({data}) => {
-  console.log('hi', data)
-  // const { frontmatter } = data.data.markdownRemark
-  //
-  // return (
-  //   <div>hi</div>
-  // )
   const { frontmatter } = data.markdownRemark
   const { html } = data.markdownRemark
 

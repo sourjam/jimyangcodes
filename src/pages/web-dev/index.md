@@ -1,6 +1,6 @@
 ---
-templateKey: 'front-end-page'
-path: /front-end
+templateKey: 'web-dev-page'
+path: /web-dev
 title: Jim Yang - Web & Hybrid App Development
 heading: heading
 description: description

@@ -12,8 +12,8 @@ const Navbar = () => (
         </Link>
       </div>
       <div className="navbar-start">
-        <Link className="navbar-item" to="/front-end">
-          Front-End
+        <Link className="navbar-item" to="/web-dev">
+          Developer
         </Link>
         <Link className="navbar-item" to="/products">
           Resume
