@@ -14,13 +14,16 @@ export default class DoingPage extends React.Component {
       <Layout>
         <section className="section">
           <div className="container">
-            <div className="content"></div>
+            <div className="content">
+              <h1>What I'm Doing Now</h1>
+              <div>A brief list of habits that I'm currently subscribed to.</div>
+            </div>
             {posts
               .map(( {node: post} ) => {
                 console.log('post', post)
                 return (
-                  <div>
-                    {post.frontmatter.title}
+                  <div key={post.id}>
+                    <h3>{post.frontmatter.title}</h3>
                     <HTMLContent content={post.html} />
                   </div>
                 )
@@ -44,6 +47,7 @@ DoingPage.propTypes = {
 export const pageQuery = graphql`
   query DoingQuery {
     allMarkdownRemark(
+      sort: { order: ASC, fields: [frontmatter___date] },
       filter: { frontmatter: { templateKey: { eq: "doing" } }}
     ) {
       edges {
