@@ -4,13 +4,13 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import {HTMLContent} from '../components/Content'
 
-export const FrontEndPageTemplate = ({
+export const WebDevPageTemplate = ({
   title,
   heading,
   description,
   html
 }) => (
-  <section className="front-end-section">
+  <section className="web-dev-section">
     <div className="container">
       <h1>{title}</h1>
       <HTMLContent content={html}/>
@@ -18,19 +18,19 @@ export const FrontEndPageTemplate = ({
   </section>
 )
 
-FrontEndPageTemplate.propTypes = {
+WebDevPageTemplate.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
   description: PropTypes.string,
 }
 
-const FrontEndPage = ({data}) => {
+const WebDevPage = ({data}) => {
   const { frontmatter } = data.markdownRemark
   const { html } = data.markdownRemark
 
   return (
     <Layout>
-      <FrontEndPageTemplate
+      <WebDevPageTemplate
         title={frontmatter.title}
         heading={frontmatter.heading}
         description={frontmatter.description}
@@ -40,7 +40,7 @@ const FrontEndPage = ({data}) => {
   )
 }
 
-FrontEndPage.propTypes = {
+WebDevPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
@@ -48,11 +48,11 @@ FrontEndPage.propTypes = {
   }),
 }
 
-export default FrontEndPage
+export default WebDevPage
 
 
-export const frontEndPageQuery = graphql`
-  query FrontEndPage($id: String!) {
+export const webDevPageQuery = graphql`
+  query WebDevPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {

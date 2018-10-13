@@ -6,7 +6,8 @@ heading: heading
 description: description
 ---
 
-Full Stack Developer with a focus on delivering delightful user experiences
+Full Stack Developer with a focus on delivering delightful user experiences.
+Connect on [LinkedIn](https://www.linkedin.com/in/jimyyang).
 
   * **Front-End:** React, Redux, Angular 1.x, Vue, GreenSock/Velocity/CSS animation, Cordova/Ionic, HTML/CSS/JS
   * **Back-End:** JavaScript: Node/Express/Parse, Python: Django, C#: .NET, PostgreSQL, MongoDB, DocumentDB
