@@ -1,7 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import github from '../img/github-icon.svg'
-import logo from '../img/logo.svg'
 
 const Navbar = () => (
   <nav className="navbar is-transparent">
@@ -19,14 +17,14 @@ const Navbar = () => (
           Doing Now
         </Link>
         <br/>
-        <Link className="navbar-item" to="/worked-at">
+        {/* <Link className="navbar-item" to="/worked-at">
           Worked At
         </Link>
         <Link className="navbar-item" to="/hindsights">
           Hindsights
-        </Link>
+        </Link> */}
         <br/>
-        <Link className="navbar-item" to="/version-history">
+        <Link className="navbar-item" to="/version">
           Version 0.1
         </Link>
       </div>

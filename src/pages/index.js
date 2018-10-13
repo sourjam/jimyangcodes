@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import { HTMLContent } from '../components/Content'
 
@@ -29,27 +29,27 @@ export default class IndexPage extends React.Component {
                 )
 
 
-                return (
-                  <div
-                    className="content"
-                    style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
-                    key={post.id}
-                  >
-                    <p>
-                      <Link className="has-text-primary" to={post.fields.slug}>
-                        {post.frontmatter.title}
-                      </Link>
-                      <span> &bull; </span>
-                      <small>{post.frontmatter.date}</small>
-                    </p>
-                    <p>
-                      { post.html }
-                      <br />
-                      <br />
-
-                    </p>
-                  </div>
-                )
+                // return (
+                //   <div
+                //     className="content"
+                //     style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
+                //     key={post.id}
+                //   >
+                //     <p>
+                //       <Link className="has-text-primary" to={post.fields.slug}>
+                //         {post.frontmatter.title}
+                //       </Link>
+                //       <span> &bull; </span>
+                //       <small>{post.frontmatter.date}</small>
+                //     </p>
+                //     <p>
+                //       { post.html }
+                //       <br />
+                //       <br />
+                //
+                //     </p>
+                //   </div>
+                // )
               })}
           </div>
         </section>

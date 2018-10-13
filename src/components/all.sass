@@ -48,6 +48,8 @@ body
 
 .gatsby-template-wrapper
   display: flex
+  @media(max-width: 600px)
+    display: block
 
 .gatsby-section-wrapper
   display: inline-block
@@ -74,6 +76,7 @@ body
   padding-left: 10%
   a
     color: black
+    white-space: nowrap
 
 
 .navbar-brand
@@ -86,6 +89,10 @@ body
 .navbar-start
   display: flex
   flex-direction: column
+  @media(max-width: 600px)
+    flex-direction: row
+    a
+      margin-right: 1em
 
 .web-dev-section
   max-width: 35em
