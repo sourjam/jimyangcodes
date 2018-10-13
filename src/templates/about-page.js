@@ -32,15 +32,17 @@ AboutPageTemplate.propTypes = {
 }
 
 const AboutPage = (data) => {
+  console.log('about?')
   const { markdownRemark: post } = data
 
   return (
-    <Layout>
-      <AboutPageTemplate
-        contentComponent={HTMLContent}
-        content={post.html}
-      />
-    </Layout>
+    <div></div>
+    // <Layout>
+    //   <AboutPageTemplate
+    //     contentComponent={HTMLContent}
+    //     content={post.html}
+    //   />
+    // </Layout>
   )
 }
 
